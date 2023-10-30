@@ -1,0 +1,131 @@
+@font-face {
+    font-family: canopee;
+    src: url(./canopee.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: #a17385fd;
+    display: flex;
+    justify-content: space-between;
+}
+/* https://unsplash.com/photos/6W4F62sN_yI */
+
+#part1{
+    width: 30%;
+    height: 100%;
+    /* background-color: aquamarine; */
+}
+#part2{
+    width: 30%;
+    height: 100%;
+    background-color: red;
+    overflow: hidden;
+}
+
+
+
+#part2_img{
+    height: 100%;
+   
+}
+#part2_img>img{
+    height: 100%;
+}
+.overlay1{
+   transform: translate(0 ,-100%);
+    height: 100%;
+    background-color: #915e8198;
+}
+
+
+
+.overlay2{
+    width: 100%;
+     height: 100%;
+     background-color: #f68ff25e;
+ }
+#part3{
+    width: 10%;
+    height: 100%;
+    /* background-color: rgb(64, 120, 101); */
+}
+
+
+
+#text-div{
+    height: 350px;
+    position: absolute;
+    width: 400px;
+    background-color: rgb(86, 224, 44);
+    left: 0;
+    top: 30%;
+    transform: translate(50%,0);
+    overflow: hidden;
+    
+
+}
+#text-div>h1{
+    font-size: 100px;
+    font-family: canopee;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 78px;
+    /* color: rgba(255, 255, 255, 0.968); */
+    color: rgba(255, 255, 255, 0.714);
+    letter-spacing: 10px;
+}
+/*https://images.unsplash.com/photo-1534008757030-27299c4371b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80*/
+#img-div{
+    height: 400px;
+    width: 300px;
+    background-color: bisque;
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    background-image: url(https://images.unsplash.com/photo-1534008757030-27299c4371b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+    background-position: center;
+}
+#verticalText{
+    position: absolute;
+    width: 100vh;
+    height: 40px;
+    /* background-color: red; */
+    
+    left: 90%;
+    transform-origin: 0% 0%;
+    transform: rotate(90deg);
+    overflow: hidden;
+    
+}
+#verticalText>h1{
+    font-family: gilroy;
+    
+    color: transparent;
+    font-size: 30px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.447);
+    letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    #img-div{
+        display: none;
+    }
+
+
+  }
